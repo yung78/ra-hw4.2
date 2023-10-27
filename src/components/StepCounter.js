@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Note from './Note';
-import data from './data';
+import data from '../data';
 
 export default function StepCounter() {
 
@@ -38,11 +38,6 @@ export default function StepCounter() {
   const handlerDelete = (date) => {
     data.remove(date);
     setElements(data.elements);
-    // если убрать выражение ниже - компоненты не обновляются?
-    setForm({
-      date: '',
-      distance: '',
-    })
   }
 
   const handlerEdit = (date, distance) => {

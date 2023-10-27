@@ -19,8 +19,10 @@ const data = {
   },
 
   remove(date) {
-    const index = this.elements.findIndex((el) => dateFormat(el.date, 'dd.mm.yy') === date);
-    this.elements.splice(index, 1);
+    // const index = this.elements.findIndex((el) => dateFormat(el.date, 'dd.mm.yy') === date);
+    // this.elements.splice(index, 1);
+    this.elements = this.elements.filter((el) => dateFormat(el.date, 'dd.mm.yy') !== date)
+
     console.log(this.elements)
   }
 }

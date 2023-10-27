@@ -7,7 +7,7 @@ export default function Note({ data, handlerDelete, handlerEdit }) {
         <div className='note_date'>{dateFormat(el.date, 'dd.mm.yy')}</div>
         <div className='note_distance'>{el.distance}</div>
         <div className='note_actions'>
-          <div 
+          <div  
             className='edit'
             onClick={() => handlerEdit(dateFormat(el.date, 'dd.mm.yy'), el.distance)}
           ></div>

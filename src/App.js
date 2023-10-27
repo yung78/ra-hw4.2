@@ -1,5 +1,5 @@
 import './App.css';
-import StepCounter from './StepCounter';
+import StepCounter from './components/StepCounter';
 
 function App() {
   return (
